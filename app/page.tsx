@@ -1,101 +1,87 @@
-import Image from "next/image";
+// app/page.tsx
+"use client";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  gql,
+} from "@apollo/client";
+import { useState } from "react";
+import LocationInput from "./components/LocationInput";
+import axios from "axios";
+import { Restaurant } from "./components/Restaurant";
+//import RestaurantGrid from "./components/RestaurantGrid";
 
+const client = new ApolloClient({
+  uri: "https://enatega-multivendor.up.railway.app/graphql",
+  cache: new InMemoryCache(),
+});
+
+interface Coordinates {
+  latitude: number;
+  longitude: number;
+}
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { latitude, longitude } = position.coords;
+      const coord: Coordinates = {
+        latitude: latitude,
+        longitude: longitude,
+      };
+      console.log(coord);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      setCoordinates(coord);
+    });
+  }
+  const [restaurants, setRestaurants] = useState([]);
+  const [coordinates, setCoordinates] = useState<Coordinates>({
+    latitude: 0,
+    longitude: 0,
+  });
+
+  // const handleFindRestaurants = async () => {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(async (position) => {
+  //       const { latitude, longitude } = position.coords;
+  //       const coordinates: Coordinates = {
+  //         latitude: latitude,
+  //         longitude: longitude,
+  //       };
+  //       setCoordinates(coordinates);
+  //       // const response = await axios.post(
+  //       //   `https://enatega-multivendor.up.railway.app/graphql`,
+  //       //   {
+  //       //     params: {
+  //       //       format: "json",
+  //       //       lat: latitude,
+  //       //       lon: longitude,
+  //       //     },
+  //       //   }
+  //       // /restaurants?lat=${latitude}&lon=${longitude}`
+  //       // // );
+  //       // const data = response;
+  //       // console.log(data);
+
+  //       // setRestaurants(data);
+  //     });
+  //   }
+  // };
+
+  return (
+    <div className="p-8">
+      <ApolloProvider client={client}>
+        <Restaurant coors={coordinates} />
+        {/* <LocationInput />
+        <button
+          onClick={handleFindRestaurants}
+          className="bg-green-500 text-white px-4 py-2 rounded mt-4"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          Find Restaurants
+        </button> */}
+        {/* {restaurants.length > 0 && <RestaurantGrid restaurants={restaurants} />} */}
+      </ApolloProvider>
+      ,
     </div>
   );
 }

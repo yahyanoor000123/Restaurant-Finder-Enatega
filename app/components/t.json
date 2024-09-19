@@ -1,0 +1,1695 @@
+// {
+//     "data": {
+//         "configuration": {
+//             "_id": "6464509a2e05958d543c2a60",
+//             "currency": "NPR",
+//             "currencySymbol": "₨",
+//             "deliveryRate": 5,
+//             "twilioEnabled": true,
+//             "webClientID": "967541328677-ge2hpr0n095d0nro56kot0t4q388dsll.apps.googleusercontent.com",
+//             "googleApiKey": "AIzaSyCcm7_Wd7uvmC9YnYLu2JHGWPt6z1MaL1E",
+//             "webAmplitudeApiKey": "a61c5eb5909604e48cfa94fbc2d67579",
+//             "googleMapLibraries": "places,drawing,geometry,localContext,visualization",
+//             "googleColor": "#dd4b39",
+//             "webSentryUrl": "https://e963731ba0f84e5d823a2bbe2968ea4d@o1103026.ingest.sentry.io/6135261",
+//             "publishableKey": "pk_test_51PqukwHjJvVL1honUQ86FwsBBCLBp2n9v4ZExF1i9BJMvrjkto2Q7T4YyptL0XXseNIENf4vbZV9sGFVkFEH5BPA00Mm86Q0lm",
+//             "clientId": "AeGIgSX--JEVwoQgLjGOb8gh1DUJG0MFVgLc2mBIe6_V5NefV0LM3L78m01fLLI6U2FFB-qJr4ErrtL1",
+//             "skipEmailVerification": true,
+//             "skipMobileVerification": true,
+//             "costType": "perKM",
+//             "vapidKey": "",
+//             "__typename": "Configuration"
+//         }
+//     }
+// }
+
+{
+  "data": {
+    "nearByRestaurants": {
+      "offers": [],
+      "sections": [
+        {
+          "_id": "649142fa12cd28f106e6b0cc",
+          "name": "Top Restaurants",
+          "restaurants": [
+            "64634f572e05958d543ba306",
+            "646464fc2e05958d543c4602",
+            "64636bcb2e05958d543be1d5",
+            "646483352e05958d543cbef6",
+            "6465c1d02e05958d543e13a6",
+            "646499222e05958d543d152a",
+            "6465d2522e05958d543e8a56",
+            "6465f4ae1bcf26ebed3b8cbf",
+            "6465d8bd2e05958d543f1201",
+            "6465f5141bcf26ebed3b8cc1",
+            "6465fbae1bcf26ebed3b8cc6",
+            "6465f5601bcf26ebed3b8cc3",
+            "6465fc5e2e05958d543f67f6",
+            "646602321bcf26ebed3b8cca",
+            "6465fd282e05958d543f6cfc",
+            "6466026d1bcf26ebed3b8ccc",
+            "646602f01bcf26ebed3b8cd0",
+            "646602a41bcf26ebed3b8cce",
+            "646659d9fe53f8a9350d7d35"
+          ],
+          "__typename": "SectionInfo"
+        },
+        {
+          "_id": "64a73093457d0de1a0dda175",
+          "name": "Proba",
+          "restaurants": [
+            "64634f572e05958d543ba306",
+            "64636bcb2e05958d543be1d5",
+            "6465d8bd2e05958d543f1201",
+            "6465fbae1bcf26ebed3b8cc6",
+            "6465f4ae1bcf26ebed3b8cbf",
+            "646602f01bcf26ebed3b8cd0",
+            "648bf89812cd28f106ab44a9",
+            "64a0982c457d0de1a0a31ac8",
+            "648db1f412cd28f106b6dc53",
+            "648bf81912cd28f106ab4349",
+            "648b70ac12cd28f106a801b3",
+            "648b54f212cd28f106a642c5",
+            "6466026d1bcf26ebed3b8ccc",
+            "646602a41bcf26ebed3b8cce"
+          ],
+          "__typename": "SectionInfo"
+        },
+        {
+          "_id": "64a73094457d0de1a0ddb5ec",
+          "name": "Proba",
+          "restaurants": [
+            "64634f572e05958d543ba306",
+            "64636bcb2e05958d543be1d5",
+            "6465d8bd2e05958d543f1201",
+            "6465fbae1bcf26ebed3b8cc6",
+            "6465f4ae1bcf26ebed3b8cbf",
+            "646602f01bcf26ebed3b8cd0",
+            "648bf89812cd28f106ab44a9",
+            "64a0982c457d0de1a0a31ac8",
+            "648db1f412cd28f106b6dc53",
+            "648bf81912cd28f106ab4349",
+            "648b70ac12cd28f106a801b3",
+            "648b54f212cd28f106a642c5",
+            "6466026d1bcf26ebed3b8ccc",
+            "646602a41bcf26ebed3b8cce"
+          ],
+          "__typename": "SectionInfo"
+        },
+        {
+          "_id": "64cfa8b1457d0de1a0c03305",
+          "name": "Maria",
+          "restaurants": [
+            "646464fc2e05958d543c4602",
+            "6465f4ae1bcf26ebed3b8cbf",
+            "646602321bcf26ebed3b8cca",
+            "646602f01bcf26ebed3b8cd0",
+            "6465d2522e05958d543e8a56",
+            "646603f91bcf26ebed3b8cd2"
+          ],
+          "__typename": "SectionInfo"
+        },
+        {
+          "_id": "65fd34acdb4a3e93b5c86e4a",
+          "name": "mmij",
+          "restaurants": [
+            "6465fc5e2e05958d543f67f6",
+            "6465c1d02e05958d543e13a6",
+            "646659d9fe53f8a9350d7d35"
+          ],
+          "__typename": "SectionInfo"
+        },
+        {
+          "_id": "662948c61083abde08690a1d",
+          "name": "dsfsdf",
+          "restaurants": [
+            "64636bcb2e05958d543be1d5",
+            "64634f572e05958d543ba306",
+            "646464fc2e05958d543c4602",
+            "646499222e05958d543d152a",
+            "6465d2522e05958d543e8a56",
+            "6465f4ae1bcf26ebed3b8cbf",
+            "6465f5601bcf26ebed3b8cc3",
+            "6465fbae1bcf26ebed3b8cc6",
+            "6465f5141bcf26ebed3b8cc1",
+            "6465c1d02e05958d543e13a6",
+            "646483352e05958d543cbef6",
+            "6465d8bd2e05958d543f1201"
+          ],
+          "__typename": "SectionInfo"
+        }
+      ],
+      "restaurants": [
+        {
+          "_id": "6465d2522e05958d543e8a56",
+          "name": "Chinese Food-East",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1726653477/food/zqcpouidowr7l9zkha1f.png",
+          "slug": "chinese-food-east",
+          "address": "Islamabad",
+          "location": {
+            "coordinates": ["73.02904375787213", "33.684771353056384"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 1,
+          "reviewData": {
+            "total": 3,
+            "ratings": 4.67,
+            "reviews": [
+              {
+                "_id": "66eaa0111ab7d2a337100fcf",
+                "__typename": "Review"
+              },
+              {
+                "_id": "66ca3fc10dfbcd9dcb3df168",
+                "__typename": "Review"
+              },
+              {
+                "_id": "64cfac2a457d0de1a0c2f6b2",
+                "__typename": "Review"
+              }
+            ],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "6465d30c2e05958d543eacba",
+              "title": "Rice",
+              "foods": [
+                {
+                  "_id": "6465d3d62e05958d543eafa5",
+                  "title": "Simple Fried Rice",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d41e2e05958d543eb02e",
+                  "title": "Egg Fried Rice",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d44d2e05958d543eb3e9",
+                  "title": "Chicken Fried Rice",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d4702e05958d543eb46e",
+                  "title": "Vegetable Fried Rice",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "65e94044067e18cd26735065",
+                  "title": "Food In Food Long Food Test",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6465d3142e05958d543eaed9",
+              "title": "Gravy",
+              "foods": [
+                {
+                  "_id": "6465d56d2e05958d543ec9eb",
+                  "title": "Chicken Manchurian",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d5842e05958d543eca19",
+                  "title": "Chicken Shashlik",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d5ba2e05958d543eca45",
+                  "title": "Chicken Chilli Dry",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d6022e05958d543ecb4f",
+                  "title": "Szechuan Chicken",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d6192e05958d543ed9d4",
+                  "title": "Kung Pao Chicken",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d6362e05958d543ee107",
+                  "title": "Chicken Stir Fry",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d69e2e05958d543ef615",
+                  "title": "Chicken with Chestnuts",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d6b72e05958d543ef649",
+                  "title": "Honey Chicken",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d70a2e05958d543ef6a0",
+                  "title": "Garlic Butter Chicken",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6465d7362e05958d543ef728",
+              "title": "Soups",
+              "foods": [
+                {
+                  "_id": "6465d7662e05958d543ef76d",
+                  "title": "Hot and sour soup",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d7922e05958d543f0c9e",
+                  "title": "Bak kut teh",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d7e92e05958d543f0e95",
+                  "title": "Banmian",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d8052e05958d543f0ed4",
+                  "title": "Beef noodle soup",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d8232e05958d543f0f61",
+                  "title": "Black sesame soup",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d8452e05958d543f0fa5",
+                  "title": "Boiled mutton soup",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "6466026d1bcf26ebed3b8ccc",
+          "name": "Ice-Cream Shop-East",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1712429062/food/nsqffkk6nxbvdqg0rmby.jpg",
+          "slug": "ice-cream-shop-east",
+          "address": "karachi",
+          "location": {
+            "coordinates": ["67.02638626098633", "25.038560346531483"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 0,
+            "ratings": 0,
+            "reviews": [],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "6465cd3a2e05958d543e7f37",
+              "title": "Specials ",
+              "foods": [
+                {
+                  "_id": "6465cdd62e05958d543e7f7d",
+                  "title": "Chocolate custard",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ce132e05958d543e82b4",
+                  "title": "Honey Dew",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ce2b2e05958d543e82d4",
+                  "title": "Lemon Chiffon",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ce462e05958d543e82f6",
+                  "title": "Caramel Praline",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ce752e05958d543e831a",
+                  "title": "Butter Land",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ce8d2e05958d543e8340",
+                  "title": "Saffron Pistachio",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ceab2e05958d543e8368",
+                  "title": "Rainbow Sherbet",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465cec32e05958d543e8392",
+                  "title": "Nutella",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465ceda2e05958d543e83be",
+                  "title": "Vanilla Bean",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6465cd402e05958d543e7f4d",
+              "title": "Classics",
+              "foods": [
+                {
+                  "_id": "6465cefe2e05958d543e83ec",
+                  "title": "Rockey Roads",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465cf182e05958d543e841c",
+                  "title": "Chocolate ",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465cf4a2e05958d543e847d",
+                  "title": "Strawberry",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465cf5c2e05958d543e84b1",
+                  "title": "Salty Caramel",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465cf702e05958d543e84e7",
+                  "title": "Vanilla",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6465cd442e05958d543e7f64",
+              "title": "Ice cream shakes",
+              "foods": [
+                {
+                  "_id": "6465d07d2e05958d543e8585",
+                  "title": "Gems",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d0b92e05958d543e85f6",
+                  "title": "Munch",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d0de2e05958d543e8632",
+                  "title": "Peanut butter",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d0fa2e05958d543e8670",
+                  "title": "Wonder Vanilla",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d1182e05958d543e86b0",
+                  "title": "White Chocolate",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d12c2e05958d543e86f2",
+                  "title": "Butter Scotch",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d15c2e05958d543e877a",
+                  "title": "Dates",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d1702e05958d543e87c0",
+                  "title": "Chocolate ",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6465d1882e05958d543e8808",
+                  "title": "Oreo",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66d011480dfbcd9dcb4bca2e",
+              "title": "popular1",
+              "foods": [],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "646659d9fe53f8a9350d7d35",
+          "name": "Italian Food-East",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1713467478/food/kj0saz2yjfsbb19d4mbh.jpg",
+          "slug": "italian-food-east",
+          "address": "Islamabad",
+          "location": {
+            "coordinates": ["72.94441223144531", "33.05414097418508"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 1,
+            "ratings": 5,
+            "reviews": [
+              {
+                "_id": "65e9441c067e18cd267d5cde",
+                "__typename": "Review"
+              }
+            ],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "646607ae2e05958d54406da3",
+              "title": "Pizzas",
+              "foods": [
+                {
+                  "_id": "646608b72e05958d5441c937",
+                  "title": "Cheese Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6466090c2e05958d544207a0",
+                  "title": "Veggie Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "646609382e05958d54423fa5",
+                  "title": "Pepperoni Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6466095a2e05958d5442753d",
+                  "title": "Margherita Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "646609792e05958d54427848",
+                  "title": "BBQ Chicken Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "646609932e05958d544278ba",
+                  "title": "Hawaiian Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "646609be2e05958d5442ae9e",
+                  "title": "Buffalo Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "646609fe2e05958d5442e82d",
+                  "title": "Pizza Capricciosa",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660a342e05958d5442fbca",
+                  "title": "Kale And Sausage Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660a532e05958d5442fbfc",
+                  "title": "Deluxe Veggie Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660a7b2e05958d5443070a",
+                  "title": "Mexican Green Wave Pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "660be5a7fdaa1129436369e0",
+                  "title": "new pizza",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "660be723fdaa11294364a4aa",
+                  "title": "new test pizza",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "646607b52e05958d5440a25f",
+              "title": "Pastas",
+              "foods": [
+                {
+                  "_id": "64660b502e05958d544358f0",
+                  "title": "Spaghetti",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660b782e05958d54439563",
+                  "title": "Ravioli",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660ba92e05958d5443cfee",
+                  "title": "Penne Pasta",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660bcc2e05958d5443d03c",
+                  "title": "Macaroni",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660bf32e05958d54440b79",
+                  "title": "Lasagna",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660c272e05958d544446cc",
+                  "title": "Gnocchi ",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660c472e05958d5444470e",
+                  "title": " Linguine",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660c712e05958d54444752",
+                  "title": "Vermicelli",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "646607c92e05958d5440a295",
+              "title": "Beverages",
+              "foods": [
+                {
+                  "_id": "64660cae2e05958d54447c9f",
+                  "title": "Coke",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660cdb2e05958d54447fa5",
+                  "title": "Sprite",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660cf72e05958d54447ff7",
+                  "title": "Lemonade",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "64660d2f2e05958d5444804a",
+                  "title": "Water Bottle",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "6614e1a5973532e7d0c82e52",
+          "name": "Savanna Mart",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1712310489/food/dabqaozhwxvp0m63s5ju.png",
+          "slug": "savanna-mart",
+          "address": "Africa",
+          "location": {
+            "coordinates": ["81.9443125564654", "38.10043870478392"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 0,
+            "ratings": 0,
+            "reviews": [],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "660fc8f2fdaa1129437fbb17",
+              "title": "Fruits",
+              "foods": [
+                {
+                  "_id": "660fcccafdaa112943ad5c22",
+                  "title": "Tropical",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "660fce1cfdaa112943ba9d5b",
+                  "title": "Tropical Fruits",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "660fe375fdaa112943b75917",
+                  "title": "Strawberries",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "660fe41afdaa112943b75d8a",
+                  "title": "Bananas",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "660fc8fffdaa1129437fbb92",
+              "title": "Vegetables",
+              "foods": [
+                {
+                  "_id": "660fdea4fdaa11294385c737",
+                  "title": "cooking vegetables",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "668f6b22e00e83f8a78a12bd",
+                  "title": "i am testing",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "660fc908fdaa1129437fbbad",
+              "title": "Spices",
+              "foods": [],
+              "__typename": "Category"
+            },
+            {
+              "_id": "660fc95efdaa11294382beb0",
+              "title": "Dairy",
+              "foods": [
+                {
+                  "_id": "660fdf70fdaa1129438e4e4f",
+                  "title": "Eggs",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "6614e27c973532e7d0c82e56",
+          "name": "Green Leaf Grocers",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1712471472/food/ywghzncjn26y7r7mh3mg.png",
+          "slug": "baobab-bazaar",
+          "address": "USA",
+          "location": {
+            "coordinates": ["77.04257682339177", "28.094868463611743"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 0,
+            "ratings": 0,
+            "reviews": [],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "66123dc2fdaa112943f67585",
+              "title": "Dairy",
+              "foods": [
+                {
+                  "_id": "66123e66fdaa112943f67638",
+                  "title": "Eggs",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "66123ebefdaa112943f67663",
+                  "title": "yogurt",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66123dc9fdaa112943f6759f",
+              "title": "vegtables",
+              "foods": [
+                {
+                  "_id": "66123f8efdaa112943f67733",
+                  "title": "Tomatoes",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "66123fe9fdaa112943f6776d",
+                  "title": "potatoes",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66123dcffdaa112943f675ba",
+              "title": "fruits",
+              "foods": [],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66123dd8fdaa112943f675d6",
+              "title": "meat",
+              "foods": [
+                {
+                  "_id": "66124082fdaa112943f677ad",
+                  "title": "Protien",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "6614e31b973532e7d0c82e58",
+          "name": "Urban Pantry",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1712472467/food/dqaxmpjr5orlr8oaiy2y.png",
+          "slug": "urban-pantry",
+          "address": "USA",
+          "location": {
+            "coordinates": ["63.08387285988905", "38.13516556143544"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 2,
+            "ratings": 3.5,
+            "reviews": [
+              {
+                "_id": "6694bbb91d7f55b1141dfedd",
+                "__typename": "Review"
+              },
+              {
+                "_id": "6690a673e00e83f8a7c734d6",
+                "__typename": "Review"
+              }
+            ],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "661242a5fdaa112943f682ac",
+              "title": "dairy",
+              "foods": [
+                {
+                  "_id": "66124405fdaa112943f683bf",
+                  "title": "Eggs",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "661242adfdaa112943f682c6",
+              "title": "Fruits",
+              "foods": [
+                {
+                  "_id": "661244f6fdaa112943f6845c",
+                  "title": "Tropical fruits",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "661242b9fdaa112943f682e1",
+              "title": "Vegtables",
+              "foods": [
+                {
+                  "_id": "6612461dfdaa112943f684a7",
+                  "title": "Daily veggies",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "661242c1fdaa112943f682fd",
+              "title": "meat",
+              "foods": [
+                {
+                  "_id": "661246a7fdaa112943f684f7",
+                  "title": "Protien",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "6614e680973532e7d0c82e62",
+          "name": "Sunshine Supermarket",
+          "image": "https://res.cloudinary.com/do1ia4vzf/image/upload/v1712577096/food/txiyq6ribbjzpkg53c4v.png",
+          "slug": "lion's-pride-market",
+          "address": "USA",
+          "location": {
+            "coordinates": ["71.40732928141914", "31.63590521278647"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 3,
+            "ratings": 5,
+            "reviews": [
+              {
+                "_id": "66bb7a0f1755c133a11ec560",
+                "__typename": "Review"
+              },
+              {
+                "_id": "66bb7a0d1755c133a11ec48c",
+                "__typename": "Review"
+              },
+              {
+                "_id": "66bb7a0b1755c133a11ec408",
+                "__typename": "Review"
+              }
+            ],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "6613dbf2fdaa112943650700",
+              "title": "Eggs",
+              "foods": [
+                {
+                  "_id": "6613dc82fdaa11294365388a",
+                  "title": "Farm Fresh eggs",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6613dbf9fdaa112943653809",
+              "title": "Bread",
+              "foods": [
+                {
+                  "_id": "6613dd11fdaa1129436538c3",
+                  "title": "Bread",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6613dbfffdaa112943653832",
+              "title": "fruits",
+              "foods": [
+                {
+                  "_id": "6613dd8dfdaa112943653901",
+                  "title": "Fresh fruits",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "6613de00fdaa112943653947",
+                  "title": "vegetables ",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "6613dc05fdaa11294365385c",
+              "title": "vegtables",
+              "foods": [],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        },
+        {
+          "_id": "66a07fc4c0aa86a4b0936871",
+          "name": "Delicacies",
+          "image": "https://enatega.com/wp-content/uploads/2023/11/man-suit-having-breakfast-kitchen-side-view.webp",
+          "slug": "delicacies",
+          "address": "Lahore",
+          "location": {
+            "coordinates": ["73.72738613656571", "31.626580805756817"],
+            "__typename": "Point"
+          },
+          "deliveryTime": 20,
+          "minimumOrder": 0,
+          "tax": 10,
+          "reviewData": {
+            "total": 1,
+            "ratings": 5,
+            "reviews": [
+              {
+                "_id": "66a09683c0aa86a4b09af7a9",
+                "__typename": "Review"
+              }
+            ],
+            "__typename": "ReviewData"
+          },
+          "categories": [
+            {
+              "_id": "669ade13c0aa86a4b034f84e",
+              "title": "Default Category",
+              "foods": [
+                {
+                  "_id": "669ade13c0aa86a4b034f84b",
+                  "title": "Default Food",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66a0801fc0aa86a4b09368f9",
+              "title": "soup",
+              "foods": [],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66a08025c0aa86a4b093692b",
+              "title": "candies",
+              "foods": [],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66a0802dc0aa86a4b093695f",
+              "title": "spicy",
+              "foods": [],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66a08037c0aa86a4b0936995",
+              "title": "burger",
+              "foods": [],
+              "__typename": "Category"
+            },
+            {
+              "_id": "66a08049c0aa86a4b09369cd",
+              "title": "testing",
+              "foods": [
+                {
+                  "_id": "66a08215c0aa86a4b0936a0a",
+                  "title": "chinese",
+                  "__typename": "Food"
+                },
+                {
+                  "_id": "66a082a3c0aa86a4b0936a36",
+                  "title": "Pizza",
+                  "__typename": "Food"
+                }
+              ],
+              "__typename": "Category"
+            }
+          ],
+          "rating": null,
+          "isAvailable": true,
+          "openingTimes": [
+            {
+              "day": "MON",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "TUE",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "WED",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "THU",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "FRI",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SAT",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            },
+            {
+              "day": "SUN",
+              "times": [
+                {
+                  "startTime": ["00", "00"],
+                  "endTime": ["23", "59"],
+                  "__typename": "Timings"
+                }
+              ],
+              "__typename": "OpeningTimes"
+            }
+          ],
+          "__typename": "Restaurant"
+        }
+      ],
+      "__typename": "NearByData"
+    }
+  }
+}

@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add PrimeReact theme import */
+@import "primereact/resources/themes/saga-blue/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #757373;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #7a7a7a;
+    --foreground: #000000;
   }
 }
 

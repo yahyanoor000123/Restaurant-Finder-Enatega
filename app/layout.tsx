@@ -33,3 +33,27 @@ export default function RootLayout({
     </html>
   );
 }
+
+// // app/layout.tsx
+// import { ReactNode } from "react";
+// import { ApolloProvider } from "@apollo/client";
+// import Header from "./components/Header"; // Import the Header component
+// import "./styles/globals.css"; // Tailwind styles
+
+// export default function RootLayout({ children }: { children: ReactNode }) {
+//   return (
+//     <html lang="en">
+//       <body>
+//         <ApolloProvider client={client}>
+//           <div className="min-h-screen flex flex-col">
+//             {/* Header at the top */}
+//             <Header />
+
+//             {/* Page Content */}
+//             <main className="flex-grow">{children}</main>
+//           </div>
+//         </ApolloProvider>
+//       </body>
+//     </html>
+//   );
+// }

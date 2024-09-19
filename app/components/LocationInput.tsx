@@ -26,9 +26,23 @@ const LocationInput = () => {
             },
           }
         );
+        const data = response.data;
+        console.log(data);
+        if (response.status == 200) {
+          let address = response.data.display_name
+            .split(",")
+            .filter((part: string) => !/\d{5,}/.test(part)) // Removes parts with 5 or more digits
+            .join(",");
+          console.log(response.data);
+          setLocation(address); //`Lat: ${latitude}, Lon: ${longitude}`
+
+          // Update dropdown value with address
+          setDropdownValue(address); // `${latitude}, ${longitude}`
+        }
       });
     }
   };
+
   // const response_graphql = await axios.post(
   //   `https://enatega-multivendor.up.railway.app/graphql`,
   //   {
@@ -49,24 +63,7 @@ const LocationInput = () => {
   //     },
   //   }
 
-  // /restaurants?lat=${latitude}&lon=${longitude}`
-  //     );
-  //     const data = response_graphql;
-  //     console.log(data);
-  //     if (response.status == 200) {
-  //       let address = response.data.display_name
-  //         .split(",")
-  //         .filter((part: string) => !/\d{5,}/.test(part)) // Removes parts with 5 or more digits
-  //         .join(",");
-  //       console.log(response.data);
-  //       setLocation(address); //`Lat: ${latitude}, Lon: ${longitude}`
-
-  //       // Update dropdown value with address
-  //       setDropdownValue(address); // `${latitude}, ${longitude}`
-  //     }
-  //   });
-  // }
-  //   };
+  //restaurants?lat=${latitude}&lon=${longitude}`
 
   return (
     <div className="flex flex-col items-center space-y-4">

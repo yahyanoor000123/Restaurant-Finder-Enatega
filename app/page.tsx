@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 import {
   ApolloClient,
@@ -6,10 +5,13 @@ import {
   ApolloProvider,
   gql,
 } from "@apollo/client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LocationInput from "./components/LocationInput";
 import axios from "axios";
 import { Restaurant } from "./components/Restaurant";
+import dynamic from "next/dynamic";
+import { HeaderX } from "./components/HeaderX";
+import { Button } from "primereact/button";
 //import RestaurantGrid from "./components/RestaurantGrid";
 
 const client = new ApolloClient({
@@ -18,28 +20,38 @@ const client = new ApolloClient({
 });
 
 interface Coordinates {
-  latitude: number;
-  longitude: number;
+  latitude: number | null;
+  longitude: number | null;
 }
 export default function Home() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const { latitude, longitude } = position.coords;
-      const coord: Coordinates = {
-        latitude: latitude,
-        longitude: longitude,
-      };
-      console.log(coord);
-
-      setCoordinates(coord);
-    });
-  }
   const [restaurants, setRestaurants] = useState([]);
+  const [error, setError] = useState<string | null>(null);
+  const [fetchRestaurants, setFetchRestaurants] = useState<boolean>(false);
   const [coordinates, setCoordinates] = useState<Coordinates>({
-    latitude: 0,
-    longitude: 0,
+    latitude: null,
+    longitude: null,
   });
 
+  useEffect(() => {
+    if (typeof window !== "undefined" && navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        const coord: Coordinates = {
+          latitude: latitude,
+          longitude: longitude,
+        };
+        if (longitude != null && latitude != null) {
+          setCoordinates(coord);
+        } else {
+          setError("No coordinates");
+        }
+      });
+    } else {
+      setError(
+        "Geolocation is not supported by this browser or running on server"
+      );
+    }
+  }, []);
   // const handleFindRestaurants = async () => {
   //   if (navigator.geolocation) {
   //     navigator.geolocation.getCurrentPosition(async (position) => {
@@ -67,21 +79,32 @@ export default function Home() {
   //     });
   //   }
   // };
-
+  const handleFindRestaurants = () => {
+    setFetchRestaurants(true);
+  };
   return (
-    <div className="p-8">
-      <ApolloProvider client={client}>
-        <Restaurant coors={coordinates} />
-        {/* <LocationInput />
-        <button
-          onClick={handleFindRestaurants}
-          className="bg-green-500 text-white px-4 py-2 rounded mt-4"
-        >
-          Find Restaurants
-        </button> */}
-        {/* {restaurants.length > 0 && <RestaurantGrid restaurants={restaurants} />} */}
-      </ApolloProvider>
-      ,
+    <div>
+      <HeaderX />
+      <Button
+        label="Find Restaurant"
+        severity="success"
+        icon="pi pi-search"
+        rounded
+        onClick={handleFindRestaurants}
+      />
+      {fetchRestaurants && (
+        <ApolloProvider client={client}>
+          <Restaurant coors={coordinates} />
+        </ApolloProvider>
+      )}
+      <LocationInput />
+      {/* <button
+            onClick={handleFindRestaurants}
+            className="bg-green-500 text-white px-4 py-2 rounded mt-4"
+          >
+            Find Restaurants
+          </button> */}
+      {/* {restaurants.length > 0 && <RestaurantGrid restaurants={restaurants} />} */}
     </div>
   );
 }

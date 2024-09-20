@@ -24,7 +24,7 @@ interface Coordinates {
   longitude: number | null;
 }
 export default function Home() {
-  const [restaurants, setRestaurants] = useState([]);
+  // const [restaurants, setRestaurants] = useState([]);
   const [error, setError] = useState<string | null>(null);
   const [fetchRestaurants, setFetchRestaurants] = useState<boolean>(false);
   const [coordinates, setCoordinates] = useState<Coordinates>({
@@ -52,41 +52,17 @@ export default function Home() {
       );
     }
   }, []);
-  // const handleFindRestaurants = async () => {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(async (position) => {
-  //       const { latitude, longitude } = position.coords;
-  //       const coordinates: Coordinates = {
-  //         latitude: latitude,
-  //         longitude: longitude,
-  //       };
-  //       setCoordinates(coordinates);
-  //       // const response = await axios.post(
-  //       //   `https://enatega-multivendor.up.railway.app/graphql`,
-  //       //   {
-  //       //     params: {
-  //       //       format: "json",
-  //       //       lat: latitude,
-  //       //       lon: longitude,
-  //       //     },
-  //       //   }
-  //       // /restaurants?lat=${latitude}&lon=${longitude}`
-  //       // // );
-  //       // const data = response;
-  //       // console.log(data);
 
-  //       // setRestaurants(data);
-  //     });
-  //   }
-  // };
   const handleFindRestaurants = () => {
     setFetchRestaurants(true);
   };
   return (
     <div>
       <HeaderX />
+      <LocationInput />
+
       <Button
-        label="Find Restaurant"
+        label="Find Restaurants"
         severity="success"
         icon="pi pi-search"
         rounded
@@ -97,7 +73,6 @@ export default function Home() {
           <Restaurant coors={coordinates} />
         </ApolloProvider>
       )}
-      <LocationInput />
       {/* <button
             onClick={handleFindRestaurants}
             className="bg-green-500 text-white px-4 py-2 rounded mt-4"

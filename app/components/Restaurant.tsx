@@ -1,29 +1,28 @@
-import { restaurantList } from "../apollo/server";
-import { useQuery } from "@apollo/client";
+import { restaurantList } from "../apollo/queries";
+import { useLazyQuery } from "@apollo/client";
 import { Card } from "primereact/card";
-interface Coordinates {
-  latitude: Number | null;
-  longitude: Number | null;
-}
+import { Coordinates } from "../utils/interfaces";
+import { useEffect } from "react";
 
 export function Restaurant({ coors }: { coors: Coordinates }) {
-  console.log("I am now here ");
-  const { loading, error, data } = useQuery(restaurantList, {
-    variables: {
-      latitude: coors.latitude,
-      longitude: coors.longitude,
-    },
-    skip: !coors.longitude || !coors.longitude,
-  });
+  const [getRestaurants, { data }] = useLazyQuery(restaurantList);
 
-  if (loading) return "Loading...";
-  if (error) return `Error! ${error.message}`;
+  useEffect(() => {
+    if (coors.longitude && coors.latitude) {
+      getRestaurants({
+        variables: {
+          longitude: coors.longitude,
+          latitude: coors.latitude,
+        },
+      });
+    }
+  }, [coors, getRestaurants]);
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-2 gap-2">
+    <div className="grid grid-rows-2 sm:grid-cols-2 gap-2">
       {data?.nearByRestaurants?.restaurants.map((restaurant: any) => (
         <div key={restaurant._id} className="p-col-12 p-md-4 p-lg-3">
-          <Card title={restaurant.name} className="p-mb-3 text-center ">
+          <Card title={restaurant.name} className="p-mb-3 text-center">
             <img
               src={restaurant.image}
               alt={restaurant.name}
@@ -31,7 +30,6 @@ export function Restaurant({ coors }: { coors: Coordinates }) {
               style={{ width: "400px", height: "150px", objectFit: "cover" }}
             />
             <p>{restaurant.description}</p>
-            {/* Add more restaurant details here */}
           </Card>
         </div>
       ))}

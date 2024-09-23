@@ -19,7 +19,7 @@ export const Header = () => {
         />
         <span className="mx-2 text-3xl">ENATEGA</span>
       </div>
-      <div className="mx-4 whitespace-nowrap">
+      <div className="mx-4 w-full max-w-xs sm:max-w-md whitespace-nowrap">
         <i className="pi pi-map-marker mr-2 text-gray-600"></i>{" "}
         <Dropdown
           value={location} // Pass the current location value here

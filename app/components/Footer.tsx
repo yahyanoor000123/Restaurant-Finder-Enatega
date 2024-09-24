@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { Button } from "primereact/button";
 
-const Footer: FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-green-300 text-black py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -73,7 +72,6 @@ const Footer: FC = () => {
           </p>
         </div>
       </div>
-
       <div className="text-center mt-8 text-sm">
         <p>Enatega &ndash; &copy; 2022 All Rights Reserved</p>
       </div>

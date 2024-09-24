@@ -16,7 +16,7 @@ export const LocationProvider = ({
     latitude: null,
     longitude: null,
   });
-  const handleLocationFetch = async () => {
+  const LocationFetch = async () => {
     if (typeof window !== "undefined" && navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async (position) => {
         const { latitude, longitude } = position.coords;
@@ -47,9 +47,7 @@ export const LocationProvider = ({
   };
 
   return (
-    <LocationContext.Provider
-      value={{ location, handleLocationFetch, coordinates }}
-    >
+    <LocationContext.Provider value={{ location, LocationFetch, coordinates }}>
       {children}
     </LocationContext.Provider>
   );

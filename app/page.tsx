@@ -1,7 +1,7 @@
 "use client";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "./apollo/index";
-import Location from "./components/Location";
+import { Main } from "./components/Main";
 import { Header } from "./components/Header";
 import { LocationProvider } from "@/context/LocationContext";
 import Footer from "./components/Footer";
@@ -12,7 +12,7 @@ export default function Home() {
       <ApolloProvider client={client}>
         <LocationProvider>
           <Header />
-          <Location />
+          <Main />
           <Footer />
         </LocationProvider>
       </ApolloProvider>

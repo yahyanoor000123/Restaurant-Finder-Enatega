@@ -1,18 +1,17 @@
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { Restaurant } from "./Restaurant";
-import { MainProps } from "../utils/interfaces";
 import { useState } from "react";
+import { useLocation } from "@/context/LocationContext";
 
-export function Main({ location, onShareLocation, coordinates }: MainProps) {
+export const Main = () => {
   const [showRestaurants, setShowRestaurants] = useState(false);
 
+  const { location, LocationFetch, coordinates } = useLocation();
   const handleShowRestaurants = () => {
-    if (coordinates.latitude && coordinates.longitude) {
-      setShowRestaurants(true);
-    } else {
-      console.log("Coordinates are not available.");
-    }
+    console.log("I am a coordinate:  ", coordinates);
+    LocationFetch();
+    setShowRestaurants(true);
   };
 
   return (
@@ -30,23 +29,23 @@ export function Main({ location, onShareLocation, coordinates }: MainProps) {
             icon="pi pi-expand"
             label="Share Location"
             className="flex justify-center items-center text-base py-2 px-6 mx-2 rounded-lg whitespace-nowrap"
-            onClick={onShareLocation}
+            onClick={LocationFetch}
           />
         </div>
 
         <Button
           label="Find Restaurants"
-          className="bg-green-500 rounded-full text-base flex items-center justify-center px-10 py-2 mx-3 whitespace-nowrap focus:outline-none"
+          className="bg-green-500 rounded-full text-base flex items-center justify-center px-10 py-2 mx-3 mt-2 whitespace-nowrap focus:outline-none"
           onClick={handleShowRestaurants}
         />
       </div>
 
       {/* Restaurant Grid */}
-      {showRestaurants && (
+      {showRestaurants && coordinates.longitude && coordinates.latitude && (
         <div className="w-full max-w-4xl">
           <Restaurant coors={coordinates} />
         </div>
       )}
     </div>
   );
-}
+};

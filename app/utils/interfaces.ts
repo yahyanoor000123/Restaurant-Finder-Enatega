@@ -3,12 +3,6 @@ export interface Coordinates {
   longitude: number | null;
 }
 
-export interface MainProps {
-  location: string;
-  onShareLocation: () => void;
-  coordinates: Coordinates;
-}
-
 export interface RestaurantInterface {
   _id: string;
   name: string;

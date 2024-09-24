@@ -5,7 +5,7 @@ import { RestaurantInterface, Coordinates } from "../utils/interfaces";
 import { useEffect } from "react";
 import Image from "next/image";
 
-export function Restaurant({ coors }: { coors: Coordinates }) {
+export const Restaurant = ({ coors }: { coors: Coordinates }) => {
   const [getRestaurants, { data }] = useLazyQuery(restaurantList);
 
   useEffect(() => {
@@ -18,7 +18,6 @@ export function Restaurant({ coors }: { coors: Coordinates }) {
       });
     }
   }, [coors, getRestaurants]);
-  console.log(data);
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-4 mb-8">
@@ -43,11 +42,11 @@ export function Restaurant({ coors }: { coors: Coordinates }) {
             </span>{" "}
             /5 ({restaurant.reviewData.total})
             <p className="font-bold text-center	">
-              {restaurant.deliveryTime} Minutes
+              Delivery Time: {restaurant.deliveryTime} Minutes
             </p>
           </Card>
         )
       )}
     </div>
   );
-}
+};

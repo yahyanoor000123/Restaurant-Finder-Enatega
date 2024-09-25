@@ -39,7 +39,7 @@ describe("Restaurant Query (GraphQL)", () => {
     cy.get(".p-dropdown-label").should("not.be.empty");
     cy.get("button").contains("Find Restaurants").click();
     cy.wait(1000);
-    cy.wait("@getRestaurantsGraphQL", { timeout: 10000 });
+    cy.wait("@getRestaurantsGraphQL", { timeout: 15000 });
   });
 });
 

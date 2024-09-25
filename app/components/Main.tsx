@@ -9,7 +9,6 @@ export const Main = () => {
 
   const { location, LocationFetch, coordinates } = useLocation();
   const handleShowRestaurants = () => {
-    console.log("I am a coordinate:  ", coordinates);
     LocationFetch();
     setShowRestaurants(true);
   };

@@ -26,8 +26,6 @@ describe("Dropdown Location Display", () => {
 describe("Restaurant Query (GraphQL)", () => {
   it("should send the correct GraphQL query with latitude and longitude after getting user location", () => {
     cy.intercept("POST", GRAPHQL_SERVER_URL, (req) => {
-      console.log("Intercepted Request:", req);
-      console.log("URL :", GRAPHQL_SERVER_URL);
       if (req.body.operationName === "Restaurants") {
         expect(req.body.variables).to.have.property("longitude");
         expect(req.body.variables).to.have.property("latitude");
